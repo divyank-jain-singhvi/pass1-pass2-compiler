@@ -23,6 +23,7 @@ class Migration(migrations.Migration):
                 ),
                 ("lines", models.DecimalField(decimal_places=2, max_digits=9)),
                 ("code", models.TextField()),
+                ("output", models.TextField()),
             ],
         ),
     ]
