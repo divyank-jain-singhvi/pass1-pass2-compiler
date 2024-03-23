@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from corsheaders.middleware import CorsMiddleware
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,9 +42,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "compiler.apps.CompilerConfig",
     'rest_framework',
+    'corsheaders',  # added for a json permission
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",   # added for json permission
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -88,6 +92,8 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+CORS_ORIGIN_WHITELIST=['http://localhost:3000']   #added for json permission
 
 
 # Password validation
