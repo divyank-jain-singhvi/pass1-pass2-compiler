@@ -26,5 +26,5 @@ route.register("",CodeView,basename='codeview')
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(route.urls)),
+    path("", include(route.urls)),
 ]
