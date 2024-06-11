@@ -80,11 +80,11 @@ WSGI_APPLICATION = "backendserver.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'database-1',
+        'NAME': 'test1',
         'USER': 'admin',
         'PASSWORD': 'Divyank22',
-        'HOST': 'database-1.clckwcymel99.ap-south-1.rds.amazonaws.com',
-        'PORT': '3306',
+        'HOST': 'test1.clckwcymel99.ap-south-1.rds.amazonaws.com',
+        'PORT': '3306', 
     }
 }
 
