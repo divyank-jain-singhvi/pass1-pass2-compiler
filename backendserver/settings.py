@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "backendapp.apps.BackendappConfig",
     "rest_framework",
     'corsheaders',
+    'backendapp',
 ]
 
 MIDDLEWARE = [
