@@ -80,15 +80,15 @@ WSGI_APPLICATION = "backendserver.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'codes',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'NAME': 'database-1',
+        'USER': 'admin',
+        'PASSWORD': 'Divyank22',
+        'HOST': 'database-1.clckwcymel99.ap-south-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
 
-CORS_ORIGIN_WHITELIST=['http://localhost:3000']
+CORS_ORIGIN_WHITELIST=['https://pass1-pass2-compiler-frontend.vercel.app']
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
